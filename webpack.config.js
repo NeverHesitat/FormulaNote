@@ -11,7 +11,7 @@ module.exports = {
 
     entry: {
         "tml.formulaNote": resolve(__dirname, 'src/main.js'),
-        "index": resolve(__dirname, 'index.js')
+        "index": resolve(__dirname, 'test/index.js')
     },
     output: {
         path: resolve(__dirname, 'dist'),
@@ -155,7 +155,7 @@ module.exports = {
         // 自动生成html的插件: 它会在dist(output中配置)目录下自动生成一个index.html
         new HtmlPlugin({
             // 要使用的模块的路径
-            template: './src/index.html',
+            template: './test/index.html',
 
             // favicon: './src/assets/favicon.ico',
             inject: true,
