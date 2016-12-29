@@ -1,0 +1,12 @@
+<div>
+    <div class="tabs-tls"
+        v-for="data in items"
+        :tagId="data.id"
+        :class="{ selected: selected == data.id }"
+        @click=" selected=data.id ">
+        <div class="name">{{ data.name }}</div>
+        <span class="close"></span>
+    </div>
+    <div class="clear"></div>
+    <edit-panel></edit-panel>
+</div>

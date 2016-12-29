@@ -89,7 +89,7 @@ module.exports = {
             {
                 test: /\.html$/,
                 use: ['raw-loader'],
-                exclude: resolve(__dirname, 'src/index.html')
+                exclude: resolve(__dirname, 'test/index.html')
             },
             {
                 test: /\.(eot|svg|ttf|woff2?)$/,

@@ -1,5 +1,5 @@
 {
-  "name": "ContractGenerator",
+  "name": "FormulaNote",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
@@ -8,8 +8,7 @@
     "build:prod": "webpack -p --progress",
     "serve": "webpack-dev-server --inline --progress"
   },
-  "author": "MuWei",
-  "license": "ISC",
+  "author": "Owashon",
   "dependencies": {
     "vue": "2.1.7",
     "rxjs": "5.0.1"
@@ -48,5 +47,3 @@
     "webpack-dev-server": "2.2.0-rc.0"
   }
 }
-// "dependencies": 生产环境需要的依赖库
-// "devDependencies": 用于开发阶段完成集成测试等功能模块依赖
