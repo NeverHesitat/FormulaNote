@@ -1,0 +1,32 @@
+<div v-show="isDisplay">
+    <div class="abst">
+        <div class="abst-name">{{ bean.name }}</div>
+        <div class="abst-desc"></div>
+        <div class="clear"></div>
+    </div>
+    <div class="dependencies">
+        <div class="title">Dependencies</div>
+        <div class="content">{{ bean.dependencies.text }} </div>
+        <div class="clear"></div>
+    </div>
+    <div class="usage">
+        <div class="title">Usage</div>
+        <div class="content">{{ bean.usage.text }} </div>
+        <div class="clear"></div>
+    </div>
+    <div class="properties">
+        <div class="title">Properties</div>
+        <div class="content">{{ bean.properties.text }} </div>
+        <div class="clear"></div>
+    </div>
+    <div class="events">
+        <div class="title">Events</div>
+        <div class="content">{{ bean.events.text }} </div>
+        <div class="clear"></div>
+    </div>
+    <div class="methods">
+        <div class="title">Methods</div>
+        <div class="content">{{ bean.methods.text }} </div>
+        <div class="clear"></div>
+    </div>
+</div>

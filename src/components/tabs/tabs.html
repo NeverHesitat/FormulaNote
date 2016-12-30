@@ -1,12 +1,14 @@
 <div>
-    <div class="tabs-tls"
-        v-for="data in items"
-        :tagId="data.id"
-        :class="{ selected: selected == data.id }"
-        @click=" selected=data.id ">
-        <div class="name">{{ data.name }}</div>
-        <span class="close"></span>
+    <div class="tabs-tls">
+        <div class="tabs-tl"
+            v-for="item in items"
+            :tagId="item.id"
+            :class="{ selected: selected == item.id }"
+            @click=" selected=item ">
+            <div class="name">{{ item.name }}</div>
+            <span class="close"></span>
+        </div>
+        <div class="clear"></div>
     </div>
-    <div class="clear"></div>
-    <edit-panel></edit-panel>
+    <edit-panel>{{ selected.content }}</edit-panel>
 </div>

@@ -6,7 +6,17 @@
         data() {
             return {
                 isDisplay: true,
+                isFolder: true,
+                open: true,
             };
+        },
+        props: [
+            'model',
+        ],
+        computed: {
+            isFolder() {
+                return this.model.children && this.model.children.length;
+            },
         },
         template,
         methods: {

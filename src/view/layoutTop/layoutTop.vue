@@ -2,7 +2,7 @@
     import template from './layoutTop.html';
 
     export default {
-        name: 'layoutTop',
+        name: 'layout-top',
         data() {
             return {
                 isDisplay: true,

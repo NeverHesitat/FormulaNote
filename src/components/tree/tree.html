@@ -1,0 +1,10 @@
+<div class="tree">
+    <div class="name"
+        :tagId="model.id"
+        @click="open = !open">
+        {{ model.text }}
+    </div>
+    <div v-show="open" v-if="isFolder">
+        <tree v-for="cel in model.children" :model="cel"></tree>
+    </div>
+</div>

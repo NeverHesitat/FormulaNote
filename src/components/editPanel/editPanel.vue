@@ -2,12 +2,16 @@
     import template from './editPanel.html';
 
     export default {
-        name: 'editPanel',
+        name: 'edit-panel',
         data() {
             return {
                 isDisplay: true,
+                bean: {},
             };
         },
+        props: [
+            'bean',
+        ],
         template,
         methods: {
             // TODO

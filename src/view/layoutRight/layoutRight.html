@@ -1,5 +1,5 @@
-<div>
-    <tabs>
-        <edit-panel></edit-panel>
+<div v-show="isDisplay">
+    <tabs :items="tabsData">
+        <edit-panel :bean="eidtPanelData"></edit-panel>
     </tabs>
 </div>

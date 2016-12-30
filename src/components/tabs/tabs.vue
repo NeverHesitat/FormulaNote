@@ -6,12 +6,11 @@
         data() {
             return {
                 isDisplay: true,
-                items: [],
                 selected: 0,
             };
         },
         props: [
-            'tab'
+            'items'
         ],
         template,
         methods: {

@@ -1,0 +1,18 @@
+{
+    "name": "Tab",
+    "dependencies": {
+        "text": "Dependencies Content"
+    },
+    "usage": {
+        "text": "Usage Content"
+    },
+    "properties": {
+        "text": "Properties Content"
+    },
+    "events": {
+        "text": "Events Content"
+    },
+    "methods": {
+        "text": "Methods Content"
+    }
+}
