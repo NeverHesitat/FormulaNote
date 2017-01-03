@@ -7,11 +7,12 @@
             return {
                 isDisplay: true,
                 isFolder: true,
-                open: true,
+                open: false,
             };
         },
         props: [
             'model',
+            'depth',
         ],
         computed: {
             isFolder() {

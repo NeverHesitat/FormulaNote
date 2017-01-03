@@ -1,8 +1,12 @@
-<div>
-    <div class="title">Plugins</div>
-    <tree :model="treeData"></tree>
+<div class="layout-left">
+    <div class="title">
+        <div class="name">Plugins</div>
+        <i class="icon icon-much-less"></i>
+        <div class="clear"></div>
+    </div>
+    <tree :model="treeData" :depth="0"></tree>
     <scrollbar class="container">
-        <tree :model="treeData"></tree>
+        <tree :model="treeData" :depth="0"></tree>
     </scrollbar>
     <div class="clear"></div>
 </div>

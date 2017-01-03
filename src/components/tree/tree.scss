@@ -1,0 +1,23 @@
+.tree {
+
+    .name {
+        cursor: pointer;
+        font-size: 14px;
+
+        &.item {
+            color: rgb(19, 77, 165);
+            font-size: 13px;
+        }
+
+        &:hover {
+            background-color: #e6e6e6;
+            color: #de2c3b;
+        }
+
+        .spc-blc {
+            height: 10px;
+            width: 30px;
+            float: left;
+        }
+    }
+}

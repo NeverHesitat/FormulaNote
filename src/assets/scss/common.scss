@@ -1,0 +1,34 @@
+@import './icons.scss';
+
+// 图片引用的基础路径
+$basePath: './';
+
+// 图标
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.icon-logo2 {
+    @include sprite($logo2);
+}
+
+.icon-much-less {
+    @include sprite($much-less);
+}
+
+.icon-items {
+    @include sprite($items);
+}
+
+.icon-item {
+    @include sprite($item);
+}
+
+.icon-open {
+    @include sprite($open);
+}
+
+.icon-close {
+    @include sprite($close);
+}

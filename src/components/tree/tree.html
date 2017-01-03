@@ -1,10 +1,17 @@
 <div class="tree">
     <div class="name"
         :tagId="model.id"
+        :class="{item: !isFolder}"
         @click="open = !open">
+        <div v-for="i in depth" class="spc-blc"></div>
+        <i class="icon" :class="{
+            'icon-open': isFolder && open,
+            'icon-close': isFolder && !open
+        }"></i>
+        <i class="icon" :class="isFolder ? 'icon-items' : 'icon-item' "></i>
         {{ model.text }}
     </div>
     <div v-show="open" v-if="isFolder">
-        <tree v-for="cel in model.children" :model="cel"></tree>
+        <tree v-for="cel in model.children" :model="cel" :depth="depth + 1"></tree>
     </div>
 </div>

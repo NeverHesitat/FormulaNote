@@ -1,0 +1,29 @@
+@import '../../assets/scss/common.scss';
+
+.layout-left {
+    width: 377px;
+    position: absolute;
+    bottom: 1px;
+    top: 67px;
+    border: solid 1px #ddd;
+
+    .title {
+        border-bottom: solid 1px #ddd;
+
+        .name {
+            font-size: 12px;
+            padding: 5px;
+            float: left;
+        }
+
+        .icon-much-less {
+            float: right;
+            margin: 4px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #e6e6e6;
+            }
+        }
+    }
+}

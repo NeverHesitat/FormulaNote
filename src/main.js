@@ -1,3 +1,6 @@
+// 导入插件样式
+import scss from './main.scss';
+
 // 引入Vue函数库
 import Vue from 'vue';
 

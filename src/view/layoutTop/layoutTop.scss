@@ -1,0 +1,30 @@
+@import '../../assets/scss/common.scss';
+
+.layout-top {
+    height: 67px;
+    background-color: rgb(45, 62, 80);
+
+    .mlogo {
+        float: left;
+        color: #fff;
+        margin: 9px 0 9px 430px;
+    }
+
+    .sects {
+        float: right;
+        color: #fff;
+        margin-right: 423px;
+
+        .sect {
+            float: left;
+            margin: 23px 14px;
+            font-size: 1.02em;
+            letter-spacing: -1px;
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
