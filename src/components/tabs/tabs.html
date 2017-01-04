@@ -1,12 +1,12 @@
-<div>
+<div class="tabs">
     <div class="tabs-tls">
         <div class="tabs-tl"
             v-for="item in items"
             :tagId="item.id"
-            :class="{ selected: selected == item.id }"
+            :class="{ 'selected': selected.id == item.id }"
             @click=" selected=item ">
-            <div class="name">{{ item.name }}</div>
-            <span class="close"></span>
+            <span class="name">{{ item.name }}</span>
+            <i class="icon icon-close"></i>
         </div>
         <div class="clear"></div>
     </div>

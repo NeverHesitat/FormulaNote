@@ -7,7 +7,7 @@
             return {
                 isDisplay: true,
                 isFolder: true,
-                open: false,
+                open: true,
             };
         },
         props: [

@@ -2,28 +2,39 @@
 
 .layout-top {
     height: 67px;
-    background-color: rgb(45, 62, 80);
 
-    .mlogo {
-        float: left;
-        color: #fff;
-        margin: 9px 0 9px 430px;
+    .bgc {
+        background-color: #2d3e50;
+        position: fixed;
+        height: 67px;
+        width: 100%;
+        z-index: -1;
     }
 
-    .sects {
-        float: right;
-        color: #fff;
-        margin-right: 423px;
+    .container {
+        width: 1050px;
+        margin: auto;
 
-        .sect {
+        .mlogo {
             float: left;
-            margin: 23px 14px;
-            font-size: 1.02em;
-            letter-spacing: -1px;
-            cursor: pointer;
+            color: #fff;
+            margin: 9px 0;
+        }
 
-            &:hover {
-                text-decoration: underline;
+        .sects {
+            float: right;
+            color: #fff;
+
+            .sect {
+                float: left;
+                margin: 23px 14px;
+                font-size: 1.02em;
+                letter-spacing: -1px;
+                cursor: pointer;
+
+                &:hover {
+                    text-decoration: underline;
+                }
             }
         }
     }

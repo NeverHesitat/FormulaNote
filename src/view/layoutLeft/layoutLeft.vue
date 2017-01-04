@@ -1,7 +1,7 @@
 <script>
     import template from './layoutLeft.html';
 
-    import scrollbar from '../../components/scrollbar/scrollbar';
+    import vScrollbar from '../../components/scrollbar/v-scrollbar';
     import tree from '../../components/tree/tree';
 
     import treeData from '../../../test/vitualData/treeData.json';
@@ -16,7 +16,7 @@
         },
         template,
         components: {
-            scrollbar,
+            vScrollbar,
             tree,
         },
         methods: {

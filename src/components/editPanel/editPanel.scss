@@ -1,0 +1,22 @@
+.eidt-panel {
+    position: absolute;
+    top: 28px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 34px;
+
+    .abst-name {
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    .title {
+        font-weight: bold;
+        color: rgb(37, 117, 237);
+    }
+
+    .content {
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,42 @@
+.tabs {
+    padding: 1px 0 0 3px;
+    border-bottom: solid 1px #ddd;
+
+    .tabs-tl {
+        float: left;
+        border: solid 1px #ddd;
+        border-bottom: 0;
+        margin-right: 4px;
+        cursor: pointer;
+        position: relative;
+        top: 1px;
+
+        &.selected {
+            font-weight: bold;
+            background-color: #fff;
+        }
+
+        .name {
+            float: left;
+            padding: 0 17px 0 10px;
+            font-size: 12px;
+            color: #888;
+            line-height: 25px;
+
+            &:hover {
+                background-color: #ddd;
+                color: #000;
+            }
+        }
+
+        i.icon-close {
+            position: absolute;
+            right: 4px;
+            top: 7px;
+
+            &:hover {
+                background-color: #ddd;
+            }
+        }
+    }
+}

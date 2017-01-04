@@ -25,8 +25,12 @@ $basePath: './';
     @include sprite($item);
 }
 
-.icon-open {
-    @include sprite($open);
+.icon-expanded {
+    @include sprite($expanded);
+}
+
+.icon-expandable {
+    @include sprite($expandable);
 }
 
 .icon-close {
