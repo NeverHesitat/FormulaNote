@@ -10,7 +10,7 @@ const env = 'development';
 module.exports = {
 
     entry: {
-        "tml.formulaNote": resolve(__dirname, 'src/main.js'),
+        "zjb.formulaNote": resolve(__dirname, 'src/main.js'),
         "index": resolve(__dirname, 'test/index.js')
     },
     output: {
@@ -44,6 +44,9 @@ module.exports = {
             poll: 1000
         }
     },
+
+    // 调试工具
+    devtool: 'inline-source-map',
 
     // 定义了对模块的处理逻辑，用loaders定义了一系列的加载器
     // 当需要加载的文件匹配test的正则表达式时，就会调用后面的loader对文件进行处理

@@ -5,55 +5,9 @@
         <div class="clear"></div>
     </div>
     <v-scrollbar classes="tree-body" :speed=100 theme="light">
-        <div class="texst">asdfghjkl;</div>
-        <div class="texst">asdfghjkl;</div>
-        <div class="texst">asdfghjkl;</div>
-        <div class="texst">asdfghjkl;</div>
-        <div class="texst">asdfghjkl;</div>
-        <div class="texst">asdfghjkl;</div>
-        <div class="texst">asdfghjkl;</div>
-        <div class="texst">asdfghjkl;</div>
-        <div class="texst">asdfghjkl;</div>
-        <div class="texst">asdfghjkl;</div>
-        <div class="texst">asdfghjkl;</div>
-        <div class="texst">asdfghjkl;</div>
-        <div class="texst">asdfghjkl;</div>
-        <div class="texst">asdfghjkl;</div>
-        <div class="texst">asdfghjkl;</div>
-        <div class="texst">asdfghjkl;</div>
-        <div class="texst">asdfghjkl;</div>
-        <div class="texst">asdfghjkl;</div>
-        <div class="texst">asdfghjkl;</div>
-        <div class="texst">asdfghjkl;</div>
-        <div class="texst">asdfghjkl;</div>
-        <div class="texst">asdfghjkl;</div>
-        <div class="texst">asdfghjkl;</div>
-        <div class="texst">asdfghjkl;</div>
-        <div class="texst">asdfghjkl;</div>
-        <div class="texst">asdfghjkl;</div>
-        <div class="texst">asdfghjkl;</div>
-        <div class="texst">asdfghjkl;</div>
-        <div class="texst">asdfghjkl;</div>
-        <div class="texst">asdfghjkl;</div>
-        <div class="texst">asdfghjkl;</div>
-        <div class="texst">asdfghjkl;</div>
-        <div class="texst">asdfghjkl;</div>
-        <div class="texst">asdfghjkl;</div>
-        <div class="texst">asdfghjkl;</div>
-        <div class="texst">asdfghjkl;</div>
-        <div class="texst">asdfghjkl;</div>
-        <div class="texst">asdfghjkl;</div>
-        <div class="texst">asdfghjkl;</div>
-        <div class="texst">asdfghjkl;</div>
-        <div class="texst">asdfghjkl;</div>
-        <div class="texst">asdfghjkl;</div>
-        <div class="texst">asdfghjkl;</div>
-        <div class="texst">asdfghjkl;</div>
-        <div class="texst">asdfghjkl;</div>
-        <div class="texst">asdfghjkl;</div>
-        <div class="texst">asdfghjkl;</div>
-        <div class="texst">asdfghjkl;</div>
-        <div class="texst">asdfghjkl;</div>
+        <div class="clearfix" @click="resetScrollbar()">
+            <tree :model="treeData" :depth="0"></tree>
+        </div>
     </v-scrollbar>
     <div class="clear"></div>
 </div>

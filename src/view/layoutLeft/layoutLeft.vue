@@ -12,6 +12,7 @@
             return {
                 isDisplay: true,
                 treeData,
+                treeHeight: null,
             };
         },
         template,
@@ -20,8 +21,18 @@
             tree,
         },
         methods: {
-            // TODO
-        },
+            resetScrollbar () {
+                this.$nextTick(() => {
+                    if (document.createEvent) {
+                        let event = document.createEvent("HTMLEvents");
+                        event.initEvent("resize", true, true);
+                        window.dispatchEvent(event);
+                    } else if (document.createEventObject){
+                        window.fireEvent("onresize");
+                    }
+                });
+            },
+        }
     };
 </script>
 

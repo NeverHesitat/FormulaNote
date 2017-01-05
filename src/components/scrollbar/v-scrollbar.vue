@@ -4,13 +4,13 @@
             @touchstart="startDrag" @touchmove="onDrag" @touchend="stopDrag">
             <slot></slot>
         </div>
-        <vertical-scrollbar v-if="ready" v-bind:content="{ height: scrollContentHeight }" v-bind:container="{ height: scrollContainerHeight }"
-                            v-bind:scrolling="{ v: vMovement }" v-bind:dragging-from-parent="dragging" v-bind:on-change-position="handleChangePosition"
-                            v-bind:show="show" v-on:vertical="moveTheScrollbar">
+        <vertical-scrollbar v-if="ready" :content="{ height: scrollContentHeight }" :container="{ height: scrollContainerHeight }"
+                            :scrolling="{ v: vMovement }" :dragging-from-parent="dragging" :on-change-position="handleChangePosition"
+                            :show="show" @vertical="moveTheScrollbar">
         </vertical-scrollbar>
-        <horizontal-scrollbar v-if="ready" v-bind:content="{ width: scrollContentWidth }" v-bind:container="{ width: scrollContainerWidth }"
-                            v-bind:scrolling="{ h: hMovement }" v-bind:dragging-from-parent="dragging" v-bind:on-change-position="handleChangePosition"
-                            v-bind:show="show" v-on:horizontal="moveTheScrollbar">
+        <horizontal-scrollbar v-if="ready" :content="{ width: scrollContentWidth }" :container="{ width: scrollContainerWidth }"
+                            :scrolling="{ h: hMovement }" :dragging-from-parent="dragging" :on-change-position="handleChangePosition"
+                            :show="show" @horizontal="moveTheScrollbar">
         </horizontal-scrollbar>
     </div>
 </template>
