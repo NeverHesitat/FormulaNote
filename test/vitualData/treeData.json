@@ -1,235 +1,1081 @@
 {
     "id": 0,
-    "text": "root",
+    "name": "root",
     "children":
     [
         {
             "id":1,
-            "text":"Folder1",
+            "name":"Folder1",
             "children":
             [
                 {
                     "id": 2,
-                    "text":"File1"
+                    "name":"File1",
+                    "content": {
+                        "name": "Tab2",
+                        "dependencies": {
+                            "text": "Dependencies Content"
+                        },
+                        "usage": {
+                            "text": "Usage Content"
+                        },
+                        "properties": {
+                            "text": "Properties Content"
+                        },
+                        "events": {
+                            "text": "Events Content"
+                        },
+                        "methods": {
+                            "text": "Methods Content"
+                        }
+                    }
                 },
                 {
                     "id": 3,
-                    "text":"Books"
+                    "name":"Books",
+                    "content": {
+                        "name": "Tab3",
+                        "dependencies": {
+                            "text": "Dependencies Content"
+                        },
+                        "usage": {
+                            "text": "Usage Content"
+                        },
+                        "properties": {
+                            "text": "Properties Content"
+                        },
+                        "events": {
+                            "text": "Events Content"
+                        },
+                        "methods": {
+                            "text": "Methods Content"
+                        }
+                    }
                 },
                 {
                     "id": 4,
-                    "text":"PhotoShop"
+                    "name":"PhotoShop",
+                    "content": {
+                        "name": "Tab4",
+                        "dependencies": {
+                            "text": "Dependencies Content"
+                        },
+                        "usage": {
+                            "text": "Usage Content"
+                        },
+                        "properties": {
+                            "text": "Properties Content"
+                        },
+                        "events": {
+                            "text": "Events Content"
+                        },
+                        "methods": {
+                            "text": "Methods Content"
+                        }
+                    }
                 },
                 {
                     "id": 5,
-                    "text":"Sub Bookds"
+                    "name":"Sub Bookds",
+                    "content": {
+                        "name": "Tab5",
+                        "dependencies": {
+                            "text": "Dependencies Content"
+                        },
+                        "usage": {
+                            "text": "Usage Content"
+                        },
+                        "properties": {
+                            "text": "Properties Content"
+                        },
+                        "events": {
+                            "text": "Events Content"
+                        },
+                        "methods": {
+                            "text": "Methods Content"
+                        }
+                    }
                 }
             ]
         },
         {
             "id":6,
-            "text":"Languages",
+            "name":"Languages",
             "children":
             [
                 {
                     "id": 7,
-                    "text":"Java"
+                    "name":"Java",
+                    "content": {
+                        "name": "Tab7",
+                        "dependencies": {
+                            "text": "Dependencies Content"
+                        },
+                        "usage": {
+                            "text": "Usage Content"
+                        },
+                        "properties": {
+                            "text": "Properties Content"
+                        },
+                        "events": {
+                            "text": "Events Content"
+                        },
+                        "methods": {
+                            "text": "Methods Content"
+                        }
+                    }
                 },
                 {
                     "id": 8,
-                    "text":"Java"
+                    "name":"Java",
+                    "content": {
+                        "name": "Tab8",
+                        "dependencies": {
+                            "text": "Dependencies Content"
+                        },
+                        "usage": {
+                            "text": "Usage Content"
+                        },
+                        "properties": {
+                            "text": "Properties Content"
+                        },
+                        "events": {
+                            "text": "Events Content"
+                        },
+                        "methods": {
+                            "text": "Methods Content"
+                        }
+                    }
                 },
                 {
                     "id": 9,
-                    "text":"Java"
+                    "name":"Java",
+                    "content": {
+                        "name": "Tab9",
+                        "dependencies": {
+                            "text": "Dependencies Content"
+                        },
+                        "usage": {
+                            "text": "Usage Content"
+                        },
+                        "properties": {
+                            "text": "Properties Content"
+                        },
+                        "events": {
+                            "text": "Events Content"
+                        },
+                        "methods": {
+                            "text": "Methods Content"
+                        }
+                    }
                 },
                 {
                     "id": 10,
-                    "text":"Java"
+                    "name":"Java",
+                    "content": {
+                        "name": "Tab10",
+                        "dependencies": {
+                            "text": "Dependencies Content"
+                        },
+                        "usage": {
+                            "text": "Usage Content"
+                        },
+                        "properties": {
+                            "text": "Properties Content"
+                        },
+                        "events": {
+                            "text": "Events Content"
+                        },
+                        "methods": {
+                            "text": "Methods Content"
+                        }
+                    }
                 },
                 {
                     "id": 11,
-                    "text":"Java"
+                    "name":"Java",
+                    "content": {
+                        "name": "Tab11",
+                        "dependencies": {
+                            "text": "Dependencies Content"
+                        },
+                        "usage": {
+                            "text": "Usage Content"
+                        },
+                        "properties": {
+                            "text": "Properties Content"
+                        },
+                        "events": {
+                            "text": "Events Content"
+                        },
+                        "methods": {
+                            "text": "Methods Content"
+                        }
+                    }
                 },
                 {
                     "id": 12,
-                    "text":"Java"
+                    "name":"Java",
+                    "content": {
+                        "name": "Tab12",
+                        "dependencies": {
+                            "text": "Dependencies Content"
+                        },
+                        "usage": {
+                            "text": "Usage Content"
+                        },
+                        "properties": {
+                            "text": "Properties Content"
+                        },
+                        "events": {
+                            "text": "Events Content"
+                        },
+                        "methods": {
+                            "text": "Methods Content"
+                        }
+                    }
                 },
                 {
                     "id": 13,
-                    "text":"C#"
+                    "name":"C#",
+                    "content": {
+                        "name": "Tab13",
+                        "dependencies": {
+                            "text": "Dependencies Content"
+                        },
+                        "usage": {
+                            "text": "Usage Content"
+                        },
+                        "properties": {
+                            "text": "Properties Content"
+                        },
+                        "events": {
+                            "text": "Events Content"
+                        },
+                        "methods": {
+                            "text": "Methods Content"
+                        }
+                    }
                 }
             ]
         },
         {
             "id": 14,
-            "text": "Panel",
+            "name": "Panel",
             "children":
             [
                 {
                     "id": 15,
-                    "text": "Dialog"
+                    "name": "Dialog",
+                    "content": {
+                        "name": "Tab15",
+                        "dependencies": {
+                            "text": "Dependencies Content"
+                        },
+                        "usage": {
+                            "text": "Usage Content"
+                        },
+                        "properties": {
+                            "text": "Properties Content"
+                        },
+                        "events": {
+                            "text": "Events Content"
+                        },
+                        "methods": {
+                            "text": "Methods Content"
+                        }
+                    }
                 },
                 {
                     "id": 16,
-                    "text": "Dialog"
+                    "name": "Dialog",
+                    "content": {
+                        "name": "Tab16",
+                        "dependencies": {
+                            "text": "Dependencies Content"
+                        },
+                        "usage": {
+                            "text": "Usage Content"
+                        },
+                        "properties": {
+                            "text": "Properties Content"
+                        },
+                        "events": {
+                            "text": "Events Content"
+                        },
+                        "methods": {
+                            "text": "Methods Content"
+                        }
+                    }
                 },
                 {
                     "id": 17,
-                    "text": "Dialog"
+                    "name": "Dialog",
+                    "content": {
+                        "name": "Tab17",
+                        "dependencies": {
+                            "text": "Dependencies Content"
+                        },
+                        "usage": {
+                            "text": "Usage Content"
+                        },
+                        "properties": {
+                            "text": "Properties Content"
+                        },
+                        "events": {
+                            "text": "Events Content"
+                        },
+                        "methods": {
+                            "text": "Methods Content"
+                        }
+                    }
                 },
                 {
                     "id": 18,
-                    "text": "Dialog"
+                    "name": "Dialog",
+                    "content": {
+                        "name": "Tab18",
+                        "dependencies": {
+                            "text": "Dependencies Content"
+                        },
+                        "usage": {
+                            "text": "Usage Content"
+                        },
+                        "properties": {
+                            "text": "Properties Content"
+                        },
+                        "events": {
+                            "text": "Events Content"
+                        },
+                        "methods": {
+                            "text": "Methods Content"
+                        }
+                    }
                 },
                 {
                     "id": 19,
-                    "text": "Dialog"
+                    "name": "Dialog",
+                    "content": {
+                        "name": "Tab19",
+                        "dependencies": {
+                            "text": "Dependencies Content"
+                        },
+                        "usage": {
+                            "text": "Usage Content"
+                        },
+                        "properties": {
+                            "text": "Properties Content"
+                        },
+                        "events": {
+                            "text": "Events Content"
+                        },
+                        "methods": {
+                            "text": "Methods Content"
+                        }
+                    }
                 },
                 {
                     "id": 20,
-                    "text": "Dialog"
+                    "name": "Dialog",
+                    "content": {
+                        "name": "Tab20",
+                        "dependencies": {
+                            "text": "Dependencies Content"
+                        },
+                        "usage": {
+                            "text": "Usage Content"
+                        },
+                        "properties": {
+                            "text": "Properties Content"
+                        },
+                        "events": {
+                            "text": "Events Content"
+                        },
+                        "methods": {
+                            "text": "Methods Content"
+                        }
+                    }
                 },
                 {
                     "id": 21,
-                    "text": "Dialog"
+                    "name": "Dialog",
+                    "content": {
+                        "name": "Tab21",
+                        "dependencies": {
+                            "text": "Dependencies Content"
+                        },
+                        "usage": {
+                            "text": "Usage Content"
+                        },
+                        "properties": {
+                            "text": "Properties Content"
+                        },
+                        "events": {
+                            "text": "Events Content"
+                        },
+                        "methods": {
+                            "text": "Methods Content"
+                        }
+                    }
                 },
                 {
                     "id": 22,
-                    "text": "Dialog"
+                    "name": "Dialog",
+                    "content": {
+                        "name": "Tab22",
+                        "dependencies": {
+                            "text": "Dependencies Content"
+                        },
+                        "usage": {
+                            "text": "Usage Content"
+                        },
+                        "properties": {
+                            "text": "Properties Content"
+                        },
+                        "events": {
+                            "text": "Events Content"
+                        },
+                        "methods": {
+                            "text": "Methods Content"
+                        }
+                    }
                 },
                 {
                     "id": 23,
-                    "text": "Dialog"
+                    "name": "Dialog",
+                    "content": {
+                        "name": "Tab23",
+                        "dependencies": {
+                            "text": "Dependencies Content"
+                        },
+                        "usage": {
+                            "text": "Usage Content"
+                        },
+                        "properties": {
+                            "text": "Properties Content"
+                        },
+                        "events": {
+                            "text": "Events Content"
+                        },
+                        "methods": {
+                            "text": "Methods Content"
+                        }
+                    }
                 }
             ]
         },
         {
             "id": 14,
-            "text": "Panel",
+            "name": "Panel",
             "children":
             [
                 {
                     "id": 15,
-                    "text": "Dialog"
+                    "name": "Dialog",
+                    "content": {
+                        "name": "Tab15",
+                        "dependencies": {
+                            "text": "Dependencies Content"
+                        },
+                        "usage": {
+                            "text": "Usage Content"
+                        },
+                        "properties": {
+                            "text": "Properties Content"
+                        },
+                        "events": {
+                            "text": "Events Content"
+                        },
+                        "methods": {
+                            "text": "Methods Content"
+                        }
+                    }
                 },
                 {
                     "id": 16,
-                    "text": "Dialog"
+                    "name": "Dialog",
+                    "content": {
+                        "name": "Tab16",
+                        "dependencies": {
+                            "text": "Dependencies Content"
+                        },
+                        "usage": {
+                            "text": "Usage Content"
+                        },
+                        "properties": {
+                            "text": "Properties Content"
+                        },
+                        "events": {
+                            "text": "Events Content"
+                        },
+                        "methods": {
+                            "text": "Methods Content"
+                        }
+                    }
                 },
                 {
                     "id": 17,
-                    "text": "Dialog"
+                    "name": "Dialog",
+                    "content": {
+                        "name": "Tab17",
+                        "dependencies": {
+                            "text": "Dependencies Content"
+                        },
+                        "usage": {
+                            "text": "Usage Content"
+                        },
+                        "properties": {
+                            "text": "Properties Content"
+                        },
+                        "events": {
+                            "text": "Events Content"
+                        },
+                        "methods": {
+                            "text": "Methods Content"
+                        }
+                    }
                 },
                 {
                     "id": 18,
-                    "text": "Dialog"
+                    "name": "Dialog",
+                    "content": {
+                        "name": "Tab18",
+                        "dependencies": {
+                            "text": "Dependencies Content"
+                        },
+                        "usage": {
+                            "text": "Usage Content"
+                        },
+                        "properties": {
+                            "text": "Properties Content"
+                        },
+                        "events": {
+                            "text": "Events Content"
+                        },
+                        "methods": {
+                            "text": "Methods Content"
+                        }
+                    }
                 },
                 {
                     "id": 19,
-                    "text": "Dialog"
+                    "name": "Dialog",
+                    "content": {
+                        "name": "Tab19",
+                        "dependencies": {
+                            "text": "Dependencies Content"
+                        },
+                        "usage": {
+                            "text": "Usage Content"
+                        },
+                        "properties": {
+                            "text": "Properties Content"
+                        },
+                        "events": {
+                            "text": "Events Content"
+                        },
+                        "methods": {
+                            "text": "Methods Content"
+                        }
+                    }
                 },
                 {
                     "id": 20,
-                    "text": "Dialog"
+                    "name": "Dialog",
+                    "content": {
+                        "name": "Tab20",
+                        "dependencies": {
+                            "text": "Dependencies Content"
+                        },
+                        "usage": {
+                            "text": "Usage Content"
+                        },
+                        "properties": {
+                            "text": "Properties Content"
+                        },
+                        "events": {
+                            "text": "Events Content"
+                        },
+                        "methods": {
+                            "text": "Methods Content"
+                        }
+                    }
                 },
                 {
                     "id": 21,
-                    "text": "Dialog"
+                    "name": "Dialog",
+                    "content": {
+                        "name": "Tab21",
+                        "dependencies": {
+                            "text": "Dependencies Content"
+                        },
+                        "usage": {
+                            "text": "Usage Content"
+                        },
+                        "properties": {
+                            "text": "Properties Content"
+                        },
+                        "events": {
+                            "text": "Events Content"
+                        },
+                        "methods": {
+                            "text": "Methods Content"
+                        }
+                    }
                 },
                 {
                     "id": 22,
-                    "text": "Dialog"
+                    "name": "Dialog",
+                    "content": {
+                        "name": "Tab22",
+                        "dependencies": {
+                            "text": "Dependencies Content"
+                        },
+                        "usage": {
+                            "text": "Usage Content"
+                        },
+                        "properties": {
+                            "text": "Properties Content"
+                        },
+                        "events": {
+                            "text": "Events Content"
+                        },
+                        "methods": {
+                            "text": "Methods Content"
+                        }
+                    }
                 },
                 {
                     "id": 23,
-                    "text": "Dialog"
+                    "name": "Dialog",
+                    "content": {
+                        "name": "Tab23",
+                        "dependencies": {
+                            "text": "Dependencies Content"
+                        },
+                        "usage": {
+                            "text": "Usage Content"
+                        },
+                        "properties": {
+                            "text": "Properties Content"
+                        },
+                        "events": {
+                            "text": "Events Content"
+                        },
+                        "methods": {
+                            "text": "Methods Content"
+                        }
+                    }
                 }
             ]
         },
         {
             "id": 14,
-            "text": "Panel",
+            "name": "Panel",
             "children":
             [
                 {
                     "id": 15,
-                    "text": "Dialog"
+                    "name": "Dialog",
+                    "content": {
+                        "name": "Tab15",
+                        "dependencies": {
+                            "text": "Dependencies Content"
+                        },
+                        "usage": {
+                            "text": "Usage Content"
+                        },
+                        "properties": {
+                            "text": "Properties Content"
+                        },
+                        "events": {
+                            "text": "Events Content"
+                        },
+                        "methods": {
+                            "text": "Methods Content"
+                        }
+                    }
                 },
                 {
                     "id": 16,
-                    "text": "Dialog"
+                    "name": "Dialog",
+                    "content": {
+                        "name": "Tab16",
+                        "dependencies": {
+                            "text": "Dependencies Content"
+                        },
+                        "usage": {
+                            "text": "Usage Content"
+                        },
+                        "properties": {
+                            "text": "Properties Content"
+                        },
+                        "events": {
+                            "text": "Events Content"
+                        },
+                        "methods": {
+                            "text": "Methods Content"
+                        }
+                    }
                 },
                 {
                     "id": 17,
-                    "text": "Dialog"
+                    "name": "Dialog",
+                    "content": {
+                        "name": "Tab17",
+                        "dependencies": {
+                            "text": "Dependencies Content"
+                        },
+                        "usage": {
+                            "text": "Usage Content"
+                        },
+                        "properties": {
+                            "text": "Properties Content"
+                        },
+                        "events": {
+                            "text": "Events Content"
+                        },
+                        "methods": {
+                            "text": "Methods Content"
+                        }
+                    }
                 },
                 {
                     "id": 18,
-                    "text": "Dialog"
+                    "name": "Dialog",
+                    "content": {
+                        "name": "Tab18",
+                        "dependencies": {
+                            "text": "Dependencies Content"
+                        },
+                        "usage": {
+                            "text": "Usage Content"
+                        },
+                        "properties": {
+                            "text": "Properties Content"
+                        },
+                        "events": {
+                            "text": "Events Content"
+                        },
+                        "methods": {
+                            "text": "Methods Content"
+                        }
+                    }
                 },
                 {
                     "id": 19,
-                    "text": "Dialog"
+                    "name": "Dialog",
+                    "content": {
+                        "name": "Tab19",
+                        "dependencies": {
+                            "text": "Dependencies Content"
+                        },
+                        "usage": {
+                            "text": "Usage Content"
+                        },
+                        "properties": {
+                            "text": "Properties Content"
+                        },
+                        "events": {
+                            "text": "Events Content"
+                        },
+                        "methods": {
+                            "text": "Methods Content"
+                        }
+                    }
                 },
                 {
                     "id": 20,
-                    "text": "Dialog"
+                    "name": "Dialog",
+                    "content": {
+                        "name": "Tab20",
+                        "dependencies": {
+                            "text": "Dependencies Content"
+                        },
+                        "usage": {
+                            "text": "Usage Content"
+                        },
+                        "properties": {
+                            "text": "Properties Content"
+                        },
+                        "events": {
+                            "text": "Events Content"
+                        },
+                        "methods": {
+                            "text": "Methods Content"
+                        }
+                    }
                 },
                 {
                     "id": 21,
-                    "text": "Dialog"
+                    "name": "Dialog",
+                    "content": {
+                        "name": "Tab21",
+                        "dependencies": {
+                            "text": "Dependencies Content"
+                        },
+                        "usage": {
+                            "text": "Usage Content"
+                        },
+                        "properties": {
+                            "text": "Properties Content"
+                        },
+                        "events": {
+                            "text": "Events Content"
+                        },
+                        "methods": {
+                            "text": "Methods Content"
+                        }
+                    }
                 },
                 {
                     "id": 22,
-                    "text": "Dialog"
+                    "name": "Dialog",
+                    "content": {
+                        "name": "Tab22",
+                        "dependencies": {
+                            "text": "Dependencies Content"
+                        },
+                        "usage": {
+                            "text": "Usage Content"
+                        },
+                        "properties": {
+                            "text": "Properties Content"
+                        },
+                        "events": {
+                            "text": "Events Content"
+                        },
+                        "methods": {
+                            "text": "Methods Content"
+                        }
+                    }
                 },
                 {
                     "id": 23,
-                    "text": "Dialog"
+                    "name": "Dialog",
+                    "content": {
+                        "name": "Tab23",
+                        "dependencies": {
+                            "text": "Dependencies Content"
+                        },
+                        "usage": {
+                            "text": "Usage Content"
+                        },
+                        "properties": {
+                            "text": "Properties Content"
+                        },
+                        "events": {
+                            "text": "Events Content"
+                        },
+                        "methods": {
+                            "text": "Methods Content"
+                        }
+                    }
                 }
             ]
         },
         {
             "id": 14,
-            "text": "Panel",
+            "name": "Panel",
             "children":
             [
                 {
                     "id": 15,
-                    "text": "Dialog"
+                    "name": "Dialog",
+                    "content": {
+                        "name": "Tab15",
+                        "dependencies": {
+                            "text": "Dependencies Content"
+                        },
+                        "usage": {
+                            "text": "Usage Content"
+                        },
+                        "properties": {
+                            "text": "Properties Content"
+                        },
+                        "events": {
+                            "text": "Events Content"
+                        },
+                        "methods": {
+                            "text": "Methods Content"
+                        }
+                    }
                 },
                 {
                     "id": 16,
-                    "text": "Dialog"
+                    "name": "Dialog",
+                    "content": {
+                        "name": "Tab16",
+                        "dependencies": {
+                            "text": "Dependencies Content"
+                        },
+                        "usage": {
+                            "text": "Usage Content"
+                        },
+                        "properties": {
+                            "text": "Properties Content"
+                        },
+                        "events": {
+                            "text": "Events Content"
+                        },
+                        "methods": {
+                            "text": "Methods Content"
+                        }
+                    }
                 },
                 {
                     "id": 17,
-                    "text": "Dialog"
+                    "name": "Dialog",
+                    "content": {
+                        "name": "Tab17",
+                        "dependencies": {
+                            "text": "Dependencies Content"
+                        },
+                        "usage": {
+                            "text": "Usage Content"
+                        },
+                        "properties": {
+                            "text": "Properties Content"
+                        },
+                        "events": {
+                            "text": "Events Content"
+                        },
+                        "methods": {
+                            "text": "Methods Content"
+                        }
+                    }
                 },
                 {
                     "id": 18,
-                    "text": "Dialog"
+                    "name": "Dialog",
+                    "content": {
+                        "name": "Tab18",
+                        "dependencies": {
+                            "text": "Dependencies Content"
+                        },
+                        "usage": {
+                            "text": "Usage Content"
+                        },
+                        "properties": {
+                            "text": "Properties Content"
+                        },
+                        "events": {
+                            "text": "Events Content"
+                        },
+                        "methods": {
+                            "text": "Methods Content"
+                        }
+                    }
                 },
                 {
                     "id": 19,
-                    "text": "Dialog"
+                    "name": "Dialog",
+                    "content": {
+                        "name": "Tab19",
+                        "dependencies": {
+                            "text": "Dependencies Content"
+                        },
+                        "usage": {
+                            "text": "Usage Content"
+                        },
+                        "properties": {
+                            "text": "Properties Content"
+                        },
+                        "events": {
+                            "text": "Events Content"
+                        },
+                        "methods": {
+                            "text": "Methods Content"
+                        }
+                    }
                 },
                 {
                     "id": 20,
-                    "text": "Dialog"
+                    "name": "Dialog",
+                    "content": {
+                        "name": "Tab20",
+                        "dependencies": {
+                            "text": "Dependencies Content"
+                        },
+                        "usage": {
+                            "text": "Usage Content"
+                        },
+                        "properties": {
+                            "text": "Properties Content"
+                        },
+                        "events": {
+                            "text": "Events Content"
+                        },
+                        "methods": {
+                            "text": "Methods Content"
+                        }
+                    }
                 },
                 {
                     "id": 21,
-                    "text": "Dialog"
+                    "name": "Dialog",
+                    "content": {
+                        "name": "Tab21",
+                        "dependencies": {
+                            "text": "Dependencies Content"
+                        },
+                        "usage": {
+                            "text": "Usage Content"
+                        },
+                        "properties": {
+                            "text": "Properties Content"
+                        },
+                        "events": {
+                            "text": "Events Content"
+                        },
+                        "methods": {
+                            "text": "Methods Content"
+                        }
+                    }
                 },
                 {
                     "id": 22,
-                    "text": "Dialog"
+                    "name": "Dialog",
+                    "content": {
+                        "name": "Tab22",
+                        "dependencies": {
+                            "text": "Dependencies Content"
+                        },
+                        "usage": {
+                            "text": "Usage Content"
+                        },
+                        "properties": {
+                            "text": "Properties Content"
+                        },
+                        "events": {
+                            "text": "Events Content"
+                        },
+                        "methods": {
+                            "text": "Methods Content"
+                        }
+                    }
                 },
                 {
                     "id": 23,
-                    "text": "Dialog"
+                    "name": "Dialog",
+                    "content": {
+                        "name": "Tab23",
+                        "dependencies": {
+                            "text": "Dependencies Content"
+                        },
+                        "usage": {
+                            "text": "Usage Content"
+                        },
+                        "properties": {
+                            "text": "Properties Content"
+                        },
+                        "events": {
+                            "text": "Events Content"
+                        },
+                        "methods": {
+                            "text": "Methods Content"
+                        }
+                    }
                 }
             ]
         }

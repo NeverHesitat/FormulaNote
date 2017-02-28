@@ -1,5 +1,8 @@
 <div class="layout-right" v-show="isDisplay">
-    <tabs :items="tabsData">
-        <edit-panel :bean="eidtPanelData"></edit-panel>
+    <tabs :items="items"
+        :selected="selected"
+        @selected="selectedItem"
+        @items="syncItems">
+        <edit-panel :content="selected.content"></edit-panel>
     </tabs>
 </div>

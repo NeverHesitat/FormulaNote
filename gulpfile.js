@@ -9,19 +9,21 @@ var basePath = './';
 
 gulp.task('sprites', function(){
     // 合并雪碧图
-    var spriteData = gulp.src('src/assets/images/icons/*.png').pipe(spritesmith({
-        imgName: 'icons.png',
-        cssName: 'icons.scss',
+    var spriteData = gulp.src('src/assets/images/icons/*.png').pipe(
+        spritesmith({
+            imgName: 'icons.png',
+            cssName: 'icons.scss',
 
-        // 各图片间间距，如果设置为奇数，会强制+1以保证生成的2x图片为偶数宽高，默认 0
-        padding: 10,
+            // 各图片间间距，如果设置为奇数，会强制+1以保证生成的2x图片为偶数宽高，默认 0
+            padding: 10,
 
-        // 指定排列方式，有top-down （从上至下）, left-right（从左至右）, diagonal（从左上至右下）,
-        // alt-diagonal （从左下至右上）和 binary-tree（二叉树排列） 五种供选择，默认 binary-tree
-        algorithm: 'top-down',
-        algorithmOpts: { sort: true },
-        imgPath: basePath + 'src/assets/images/icons.png'
-    }));
+            // 指定排列方式，有top-down （从上至下）, left-right（从左至右）, diagonal（从左上至右下）,
+            // alt-diagonal （从左下至右上）和 binary-tree（二叉树排列） 五种供选择，默认 binary-tree
+            algorithm: 'top-down',
+            algorithmOpts: { sort: true },
+            imgPath: basePath + 'src/assets/images/icons.png'
+        })
+    );
 
     // 写文件: gulp.dest(文件的输出目录)
     // imagemin()压缩图片文件

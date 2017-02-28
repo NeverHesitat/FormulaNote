@@ -12,6 +12,9 @@ import layoutRight from './view/layoutRight/layoutRight';
 // 引入插件主页布局
 import homeLayout from './view/homeLayout.html';
 
+// 导入测试数据
+import treedata from '../test/vitualData/treeData.json';
+
 /********* 静态方法 *********/
 
 /********* 私有方法 *********/
@@ -20,7 +23,7 @@ const createViewFunc = function(element, settings) {
     // 模板 dom 插入到元素
     $(element).html(homeLayout).attr({
         // 插件标记
-        'tml-fn' : '',
+        'zjb-fn' : '',
 
         // 防止页面加载时出现 vuejs 的变量名
         'v-cloak': '',
@@ -35,6 +38,10 @@ const createViewFunc = function(element, settings) {
         data: {
             settings,
             isDisplay: true,
+            // 测试数据
+            treedata,
+            selItems: [],
+            currentSelected: null,
         },
         components: {
             layoutTop,
@@ -47,6 +54,15 @@ const createViewFunc = function(element, settings) {
             },
             hide() {
                 this.isDisplay = false;
+            },
+            // 添加选中元素
+            addSelected(item) {
+                this.selItems.push(item);
+                this.currentSelected = item;
+            },
+            // 同步选中items
+            syncSelects(items) {
+                this.selItems = items;
             },
         },
     });

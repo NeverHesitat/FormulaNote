@@ -1,6 +1,11 @@
 <!--顶部导航-->
 <layout-top ref="layout-top"></layout-top>
 <!--目录树-->
-<layout-left ref="layout-left"></layout-left>
+<layout-left ref="layout-left"
+    :ptreedata="treedata"
+    @selected="addSelected"></layout-left>
 <!--内容呈现-->
-<layout-right ref="layout-right"></layout-right>
+<layout-right ref="layout-right"
+    :pitems="selItems"
+    :pselected="currentSelected"
+    @items="syncSelects"></layout-right>

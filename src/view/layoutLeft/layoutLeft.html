@@ -6,7 +6,10 @@
     </div>
     <v-scrollbar classes="tree-body" :speed=100 theme="light">
         <div class="clearfix" @click="resetScrollbar()">
-            <tree :model="treeData" :depth="0"></tree>
+            <tree
+                :pmodel="treedata"
+                :pdepth="0"
+                @selected="selectedItem"></tree>
         </div>
     </v-scrollbar>
     <div class="clear"></div>

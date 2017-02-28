@@ -6,16 +6,34 @@
         data() {
             return {
                 isDisplay: true,
-                bean: {},
+                bean: {
+                    "name": "NAME",
+                    "dependencies": {
+                        "text": "DEPENDENCIES CONTENT"
+                    },
+                    "usage": {
+                        "text": "USAGE CONTENT"
+                    },
+                    "properties": {
+                        "text": "PROPERTIES CONTENT"
+                    },
+                    "events": {
+                        "text": "EVENTS CONTENT"
+                    },
+                    "methods": {
+                        "text": "METHODS CONTENT"
+                    }
+                },
             };
         },
-        props: [
-            'bean',
-        ],
+        props: [ 'p_bean' ],
         template,
         methods: {
             // TODO
         },
+        mounted() {
+            this.bean = this.p_bean || this.bean;
+        }
     };
 </script>
 

@@ -4,24 +4,38 @@
     import tabs from '../../components/tabs/tabs';
     import editPanel from '../../components/editPanel/editPanel';
 
-    import eidtPanelData from '../../../test/vitualData/eidtPanelData.json';
-    import tabsData from '../../../test/vitualData/tabsData.json';
-
     export default {
         name: 'layoutRight',
+        props: [ 'p_items', 'p_selected' ],
         data() {
             return {
                 isDisplay: true,
-                eidtPanelData,
-                tabsData,
+                selected: {},
+                items: [],
             };
         },
         template,
-        components: {
-            tabs,
-            editPanel,
+        components: { tabs, editPanel },
+        methods: {
+            selectedItem(item) {
+                this.selected = item;
+            },
+            syncItems(items) {
+                this.items = items;
+            },
         },
-        methods: {},
+        watch: {
+            items() {
+                this.$emit('items', this.items);
+            },
+            selected() {
+                this.$emit('selected', this.selected);
+            },
+        },
+        mounted() {
+            this.items = this.p_items || this.items;
+            this.selected = this.p_selected || this.selected;
+        },
     };
 </script>
 

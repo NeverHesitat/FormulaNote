@@ -4,15 +4,15 @@
     import vScrollbar from '../../components/scrollbar/v-scrollbar';
     import tree from '../../components/tree/tree';
 
-    import treeData from '../../../test/vitualData/treeData.json';
-
     export default {
         name: 'layoutLeft',
+        props: [ 'ptreedata' ],
         data() {
             return {
                 isDisplay: true,
-                treeData,
                 treeHeight: null,
+                selected: null,
+                treedata: {},
             };
         },
         template,
@@ -21,7 +21,7 @@
             tree,
         },
         methods: {
-            resetScrollbar () {
+            resetScrollbar() {
                 this.$nextTick(() => {
                     if (document.createEvent) {
                         let event = document.createEvent("HTMLEvents");
@@ -32,7 +32,18 @@
                     }
                 });
             },
-        }
+            selectedItem(item) {
+                this.selected = item;
+            }
+        },
+        watch: {
+            selected() {
+                this.$emit('selected', this.selected);
+            },
+        },
+        beforeCreate() {
+            this.treedata = this.ptreedata || this.treedata;
+        },
     };
 </script>
 
