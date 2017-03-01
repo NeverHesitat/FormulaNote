@@ -1,7 +1,7 @@
 <div class="tree">
     <div class="name"
         :tagId="model.id"
-        :class="{item: !isFolder}"
+        :class="{item: !isFolder, selected: selected == model}"
         @click="clickNode">
         <div v-for="i in depth" class="spc-blc"></div>
         <i class="icon" :class="{
@@ -10,12 +10,12 @@
         }"></i>
         <i class="icon" :class="isFolder ? 'icon-items' : 'icon-item' "></i>
         <span>{{ model.name }}</span>
-        <span v-if="selected">selected</span>
     </div>
     <div v-show="open" v-if="isFolder">
         <tree v-for="cel in model.children"
-            :pmodel="cel"
-            :pdepth="depth + 1"
+            :model="cel"
+            :depth="depth + 1"
+            :selected="selected"
             @selected="selectedNode"></tree>
     </div>
 </div>

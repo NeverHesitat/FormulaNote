@@ -7,9 +7,11 @@
     <v-scrollbar classes="tree-body" :speed=100 theme="light">
         <div class="clearfix" @click="resetScrollbar()">
             <tree
-                :pmodel="treedata"
-                :pdepth="0"
-                @selected="selectedItem"></tree>
+                :model="treedata"
+                :depth="0"
+                :selected="selected"
+                @selected="selectedItem">
+            </tree>
         </div>
     </v-scrollbar>
     <div class="clear"></div>

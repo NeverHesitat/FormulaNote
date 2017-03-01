@@ -3,10 +3,10 @@
         <div class="tabs-tl"
             v-for="item in items"
             :tagId="item.id"
-            :class="{ 'selected': selected.id == item.id }"
+            :class="{ 'selected': selected == item }"
             @click=" selected=item ">
             <span class="name">{{ item.name }}</span>
-            <i class="icon icon-close"></i>
+            <i class="icon icon-close" @click="removeSelected(item)"></i>
         </div>
         <div class="clear"></div>
     </div>

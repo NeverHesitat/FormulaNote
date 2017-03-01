@@ -6,26 +6,22 @@
         data() {
             return {
                 isDisplay: true,
-                selected: {},
-                items: [],
             };
         },
-        props: [ 'p_items', 'p_selected' ],
+        props: {
+            items: Array,
+            selected: Object,
+        },
         template,
         methods: {
-            // TODO
+            removeSelected(item) {
+                this.$emit('remove', item);
+            },
         },
         watch: {
-            items() {
-                this.$emit('items', this.items);
-            },
             selected() {
                 this.$emit('selected', this.selected);
             },
-        },
-        mounted() {
-            this.items = this.p_items || this.items;
-            this.selected = this.p_selected || this.selected;
         },
     };
 </script>

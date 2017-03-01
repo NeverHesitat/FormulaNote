@@ -9,6 +9,11 @@
             font-size: 13px;
         }
 
+        &.selected {
+            color: #de2c3b;
+            background-color: #cce6ff;
+        }
+
         &:hover {
             background-color: #e6e6e6;
         }

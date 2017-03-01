@@ -3,10 +3,10 @@
 
     export default {
         name: 'edit-panel',
-        data() {
-            return {
-                isDisplay: true,
-                bean: {
+        props: {
+            bean: {
+                type: Object,
+                default: {
                     "name": "NAME",
                     "dependencies": {
                         "text": "DEPENDENCIES CONTENT"
@@ -22,18 +22,19 @@
                     },
                     "methods": {
                         "text": "METHODS CONTENT"
-                    }
+                    },
                 },
+            },
+        },
+        data() {
+            return {
+                isDisplay: true,
             };
         },
-        props: [ 'p_bean' ],
         template,
         methods: {
             // TODO
         },
-        mounted() {
-            this.bean = this.p_bean || this.bean;
-        }
     };
 </script>
 

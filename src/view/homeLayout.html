@@ -2,10 +2,9 @@
 <layout-top ref="layout-top"></layout-top>
 <!--目录树-->
 <layout-left ref="layout-left"
-    :ptreedata="treedata"
+    :treedata="treedata"
     @selected="addSelected"></layout-left>
 <!--内容呈现-->
 <layout-right ref="layout-right"
-    :pitems="selItems"
-    :pselected="currentSelected"
-    @items="syncSelects"></layout-right>
+    :items="selItems"
+    @remove="removeSelected"></layout-right>

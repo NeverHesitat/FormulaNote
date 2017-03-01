@@ -15,6 +15,9 @@ import homeLayout from './view/homeLayout.html';
 // 导入测试数据
 import treedata from '../test/vitualData/treeData.json';
 
+// import tool libs
+import _ from 'lodash';
+
 /********* 静态方法 *********/
 
 /********* 私有方法 *********/
@@ -41,7 +44,6 @@ const createViewFunc = function(element, settings) {
             // 测试数据
             treedata,
             selItems: [],
-            currentSelected: null,
         },
         components: {
             layoutTop,
@@ -57,12 +59,19 @@ const createViewFunc = function(element, settings) {
             },
             // 添加选中元素
             addSelected(item) {
+                if (this.selItems.find(i => i == item)) return;
+
                 this.selItems.push(item);
-                this.currentSelected = item;
             },
-            // 同步选中items
-            syncSelects(items) {
-                this.selItems = items;
+            // 移除选中元素
+            removeSelected(item) {
+                if (item != this.currentSelected) {
+                    _.remove(this.selItems, i => { return i == item });
+                    return;
+                }
+
+                _.remove(this.selItems, i => { return i == item });
+                this.currentSelected = this.selItems[this.selItems.length - 1] || {};
             },
         },
     });

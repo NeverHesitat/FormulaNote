@@ -6,35 +6,32 @@
 
     export default {
         name: 'layoutRight',
-        props: [ 'p_items', 'p_selected' ],
+        props: {
+            items: Array,
+        },
         data() {
             return {
                 isDisplay: true,
                 selected: {},
-                items: [],
             };
         },
         template,
         components: { tabs, editPanel },
         methods: {
-            selectedItem(item) {
+            selectItem(item) {
                 this.selected = item;
             },
-            syncItems(items) {
-                this.items = items;
+            removeItem(item) {
+                this.$emit('remove', item);
+                if (item == this.selected)
+                    this.selected = this.items[0] || {};
             },
         },
         watch: {
-            items() {
-                this.$emit('items', this.items);
+            'items.length'(len, old) {
+                if (len > old)
+                    this.selected = this.items[0];
             },
-            selected() {
-                this.$emit('selected', this.selected);
-            },
-        },
-        mounted() {
-            this.items = this.p_items || this.items;
-            this.selected = this.p_selected || this.selected;
         },
     };
 </script>

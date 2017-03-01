@@ -6,13 +6,14 @@
 
     export default {
         name: 'layoutLeft',
-        props: [ 'ptreedata' ],
+        props: {
+            treedata: Object,
+        },
         data() {
             return {
                 isDisplay: true,
                 treeHeight: null,
-                selected: null,
-                treedata: {},
+                selected: {},
             };
         },
         template,
@@ -34,15 +35,12 @@
             },
             selectedItem(item) {
                 this.selected = item;
-            }
+            },
         },
         watch: {
             selected() {
                 this.$emit('selected', this.selected);
             },
-        },
-        beforeCreate() {
-            this.treedata = this.ptreedata || this.treedata;
         },
     };
 </script>
